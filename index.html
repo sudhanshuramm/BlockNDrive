@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+    <title>BlockNDrive - Decentralized Document Vault</title>
+    <script>
+      // Filter benign Vite websocket disconnection notices from reporting as fatal runtime errors
+      (function() {
+        var origError = console.error;
+        console.error = function() {
+          var firstArg = arguments[0];
+          if (typeof firstArg === 'string' && (firstArg.indexOf('[vite]') !== -1 || firstArg.indexOf('vite-plugin-pwa') !== -1)) {
+            console.warn.apply(console, arguments);
+            return;
+          }
+          origError.apply(console, arguments);
+        };
+      })();
+    </script>
+    <meta name="description" content="Decentralized Web3 document vault with client-side AES encryption, Lighthouse IPFS storage, Lit access control, Chainlink CRE risk analysis, MetaMask EVM signature identity, and Ethereum Sepolia smart contract registry." />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+
+    <meta property="og:title" content="BlockNDrive - Decentralized Document Vault" />
+    <meta property="og:description" content="Decentralized Web3 document vault with client-side AES encryption, Lighthouse IPFS storage, Lit access control, Chainlink CRE risk analysis, MetaMask EVM signature identity, and Ethereum Sepolia smart contract registry." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('blockndrive_theme') || localStorage.getItem('theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (saved === 'dark' || (!saved && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

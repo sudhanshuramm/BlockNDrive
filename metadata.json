@@ -1,0 +1,6 @@
+{
+  "name": "BlockNDrive",
+  "description": "Decentralized Web3 document vault with client-side AES encryption, Lighthouse IPFS storage, Lit access control, Chainlink CRE risk analysis, MetaMask EVM signature identity, and Ethereum Sepolia smart contract registry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
