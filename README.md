@@ -377,7 +377,7 @@ BlockNDrive/
 ## 1. Clone the repository
 
 ```bash
-git clone https://github.com/CryptoMYN/BlockNDrive.git
+git clone https://github.com/sudhanshuramm/BlockNDrive.git
 ```
 
 ```bash
@@ -651,19 +651,6 @@ into a single user-controlled document vault.
 
 ---
 
-# 📜 License
-
-Add an appropriate open-source license before distributing the project publicly.
-
-For example:
-
-```text
-MIT License
-```
-
-if that matches your intended project licensing.
-
----
 
 # 👨‍💻 Project
 
@@ -673,4 +660,4 @@ A decentralized, AI-assisted document vault built with Web3 technologies.
 
 GitHub:
 
-https://github.com/CryptoMYN/BlockNDrive
+https://github.com/sudhanshuramm/BlockNDrive
